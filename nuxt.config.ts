@@ -7,7 +7,15 @@ export default defineNuxtConfig({
       autoprefixer: {},
     },
   },
-  modules: [
-    '@nuxtjs/google-fonts',
-  ]
+  app: {
+    head: {
+      link: [
+        {
+          rel:"stylesheet",
+          href: "https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700&family=Noto+Serif+TC&display=swap",
+          as: "font",
+        },
+      ],
+    },
+  },
 });
