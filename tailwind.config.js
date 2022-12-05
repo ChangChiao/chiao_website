@@ -11,7 +11,8 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        sans: ['"Noto Sans TC"', "sans-serif"],
+        sans: ["Monda", '"Noto Sans TC"', "sans-serif"],
+        // monda: ["Monda"]
       },
     },
   },
