@@ -7,8 +7,8 @@ const menuList = [
 ];
 
 const linkList = [
-  { icon: "", link: "https://github.com/ChangChiao" },
-  { icon: "", link: "https://medium.com/coding-hot-pot" },
+  { icon: "bi:github", link: "https://github.com/ChangChiao" },
+  { icon: "bi:medium", link: "https://medium.com/coding-hot-pot" },
 ];
 
 const handleScroll = (id: string) => {
@@ -18,15 +18,17 @@ const handleScroll = (id: string) => {
 </script>
 
 <template>
-  <header class="flex items-center justify-between h-20">
-    <ul class="w-1/3">
-      <li v-for="item in menuList" :key="item.id" @click="handleScroll(item.id)">
+  <header class="flex items-center justify-end h-20 px-10">
+    <ul class="flex items-center justify-between w-1/3 ">
+      <li class="cursor-pointer" v-for="item in menuList" :key="item.id" @click="handleScroll(item.id)">
         {{ item.title }}
       </li>
     </ul>
-    <ul class="w-1/6">
-      <li v-for="item in linkList" :key="item.icon">
-        <a :href="item.link" target="_blank"> </a>
+    <ul class="flex items-center w-1/6 pl-10 ml-10 border-l border-gray-500">
+      <li class="cursor-pointer" v-for="item in linkList" :key="item.icon">
+        <a class="text-2xl" :href="item.link" target="_blank"> 
+            <Icon class="mr-4" :name="item.icon" />
+        </a>
       </li>
     </ul>
   </header>

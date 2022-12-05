@@ -7,6 +7,7 @@ export default defineNuxtConfig({
       autoprefixer: {},
     },
   },
+  modules: ['nuxt-icon'],
   app: {
     head: {
       link: [
@@ -14,6 +15,10 @@ export default defineNuxtConfig({
           rel:"stylesheet",
           href: "https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700&family=Noto+Serif+TC&display=swap",
           as: "font",
+        },
+        {
+          href: 'https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined',
+          rel: 'stylesheet',
         },
       ],
     },
