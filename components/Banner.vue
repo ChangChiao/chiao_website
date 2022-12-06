@@ -40,7 +40,7 @@ const linkList = [
       </div>
     </div>
     <div
-      class="max-w-[1000px] w-1/2 flex flex-col h-screen top-0 relative -right-40"
+      class="max-w-[1000px] w-1/2 flex flex-col h-screen top-0 relative -right-60"
     >
       <img src="~/assets/images/joe.png" alt="" />
     </div>

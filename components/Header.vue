@@ -6,22 +6,25 @@ const menuList = [
   { title: "Contact", id: "contact" },
 ];
 
-
-
 const handleScroll = (id: string) => {
   const anchor = document.getElementById(id);
-  anchor?.scrollIntoView();
+  anchor?.scrollIntoView({ behavior: "smooth" });
 };
 </script>
 
 <template>
-  <header class="fixed z-50 flex items-center w-full h-20">
+  <header class="absolute z-50 flex items-center w-full h-20">
     <div class="w-[90%] mx-auto">
-        <ul class="flex items-center justify-between w-1/3 ">
-          <li class="duration-500 cursor-pointer hover:opacity-60" v-for="item in menuList" :key="item.id" @click="handleScroll(item.id)">
-            {{ item.title }}
-          </li>
-        </ul>
+      <ul class="flex items-center justify-between w-1/3">
+        <li
+          class="duration-500 cursor-pointer hover:opacity-60"
+          v-for="item in menuList"
+          :key="item.id"
+          @click="handleScroll(item.id)"
+        >
+          {{ item.title }}
+        </li>
+      </ul>
     </div>
   </header>
 </template>

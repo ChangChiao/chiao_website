@@ -10,7 +10,7 @@ const workList = [
 </script>
 
 <template>
-  <section>
+  <section id="works">
     <ul>
       <li v-for="work in workList" :key="work.title">
         <img :src="work.img" alt="" />
