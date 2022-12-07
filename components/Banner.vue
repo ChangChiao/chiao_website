@@ -14,7 +14,7 @@ const linkList = [
       </h1>
       <p class="py-4 text-2xl">I'm a front-end engineer</p>
       <div class="p-2 text-center bg-yellow-600 w-60 rounded-3xl">
-        5+ years experience
+        {{ new Date().getFullYear() - 2018 }}+ years experience
       </div>
       <ul class="flex items-center justify-between w-24 pt-10">
         <li
