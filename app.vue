@@ -1,14 +1,5 @@
 <script lang="ts" setup>
 const isShowTop = ref(false);
-// const throttle = (callback: Function, wait = 1000) => {
-//   let timeStamp = 0;
-//   return function(...args: any[]){
-//     if(Date.now() - timeStamp > wait){
-//       callback.apply(this, args)
-//       timeStamp = Date.now();
-//     }
-//   }
-// }
 const throttle = (fn: Function, wait: number = 300) => {
   let inThrottle: boolean,
     lastFn: ReturnType<typeof setTimeout>,
@@ -51,6 +42,7 @@ onMounted(()=>{
     <Header />
     <Banner />
     <About />
+    <Experience />
     <Works />
     <Footer />
   </div>

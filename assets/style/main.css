@@ -9,7 +9,7 @@
     }
 
     section {
-        @apply w-4/5 min-h-screen mx-auto;
+        @apply w-4/5 min-h-screen pt-10 mx-auto;
     }
 
     .hash-tag {

@@ -1,7 +1,7 @@
 <script lang="ts" setup></script>
 
 <template>
-  <section id="profile" class="pt-10">
+  <section id="profile">
     <h2 class="title">About me</h2>
 
     <div class="flex justify-between">
@@ -11,7 +11,7 @@
             會把在工作上遇到的一些問題以及踩雷的過程寫成筆記，堅信每個被解決的bug都是壯大自己的養分，樂於和團隊分享發掘到的新知識點或是工具，期許自己能夠在前端趨勢中，不斷成長。
         </p>
         <ul class="pt-10">
-          <li><Icon name="ic:baseline-school" /> 輔仁大學</li>
+          <li><Icon name="ic:baseline-school" /> 輔仁大學 (2012 ~ 2015)</li>
           <li><Icon name="ic:round-location-on" /> Taipei, Taiwan</li>
           <li class="flex pt-10">
             <img class="mr-4" src="~/assets/images/self.png" alt="" />

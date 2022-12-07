@@ -17,7 +17,7 @@ const workList = [
   {
     title: "任務看板",
     content: "零感來自ptt part-time job版，上面會很多臨時的打工需求，種類千奇百怪，使用者可以在這個看板上面刊登任務，也可以認領任務",
-    skill: "前端：next、recoil、socket-io、tailwindcss，後端: express、mongoDB、socket-io、passport",
+    skill: `前端：next、recoil、socket-io、tailwindcss \n 後端: express、mongoDB、socket-io、passport`,
     img: "task",
     link: "https://task-board-theta.vercel.app/",
   },
@@ -56,7 +56,7 @@ const genURL = (name: string) => (new URL(`../assets/images/works/${name}.png`, 
             <img :src="genURL(work.img)" alt="" />
             <h3 class="pt-4 pb-2 text-xl">{{ work.title }}</h3>
             <p>{{ work.content }}</p>
-            <p class=" text-slate-400">使用技術：{{ work.skill}}</p>
+            <p class="whitespace-pre-line  text-slate-400">使用技術：{{ work.skill}}</p>
         </a>
       </li>
     </ul>
