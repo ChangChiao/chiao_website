@@ -6,8 +6,8 @@ const linkList = [
 </script>
 
 <template>
-  <section class="relative flex items-center justify-between">
-    <div class="w-1/2">
+  <section class="relative flex flex-col-reverse items-center justify-between lg:flex-row">
+    <div class="relative w-full top-1/2 lg:w-1/2">
       <h1 class="text-4xl">
         My name is <br />
         <span class="text-6xl font-bold"> Joe Chang</span>
@@ -40,7 +40,7 @@ const linkList = [
       </div>
     </div>
     <div
-      class="max-w-[1000px] w-1/2 flex flex-col h-screen top-0 relative -right-60"
+      class="max-w-[1000px] lg:w-1/2 flex flex-col lg:h-screen -top-10 relative -right-60"
     >
       <img src="~/assets/images/joe.png" alt="" />
     </div>

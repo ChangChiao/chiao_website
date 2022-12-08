@@ -50,13 +50,13 @@ const genURL = (name: string) => (new URL(`../assets/images/works/${name}.png`, 
 <template>
   <section id="works">
     <h2 class="title">works</h2>
-    <ul class="grid grid-cols-3 gap-6">
+    <ul class="grid grid-cols-1 gap-2 lg:grid-cols-3 lg:gap-6">
       <li v-for="work in workList" :key="work.title" class="mb-10 duration-300 cursor-pointer hover:translate-x-1 hover:translate-y-1">
         <a :href="work.link" target="_blank">
             <img :src="genURL(work.img)" alt="" />
             <h3 class="pt-4 pb-2 text-xl">{{ work.title }}</h3>
             <p>{{ work.content }}</p>
-            <p class="whitespace-pre-line  text-slate-400">使用技術：{{ work.skill}}</p>
+            <p class="whitespace-pre-line text-slate-400">使用技術：{{ work.skill}}</p>
         </a>
       </li>
     </ul>

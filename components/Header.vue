@@ -13,7 +13,7 @@ const handleScroll = (id: string) => {
 </script>
 
 <template>
-  <header class="absolute z-50 flex items-center w-full h-20">
+  <header class="fixed z-50 flex items-center w-full h-20 lg:absolute">
     <div class="w-[90%] mx-auto">
       <ul class="flex items-center justify-between w-1/3">
         <li

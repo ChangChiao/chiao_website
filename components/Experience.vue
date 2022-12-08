@@ -70,8 +70,8 @@ const genURL = (name: string) =>
 <template>
   <section id="experience">
     <h2 class="title">Experience</h2>
-    <div class="flex justify-between">
-      <div v-for="(item, i) in expList" class="w-2/5" :key="i">
+    <div class="flex flex-col justify-between lg:flex-row">
+      <div v-for="(item, i) in expList" class="pt-20 lg:pt-0 lg:w-2/5" :key="i">
         <div class="flex">
           <div class="w-[140px] h-[140px] overflow-hidden">
             <img :src="genURL(item.icon)" alt="" />
