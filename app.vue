@@ -1,27 +1,15 @@
 <script lang="ts" setup>
 const isShowTop = ref(false);
-const throttle = (fn: Function, wait: number = 300) => {
-  let inThrottle: boolean,
-    lastFn: ReturnType<typeof setTimeout>,
-    lastTime: number;
-  return function (this: any) {
-    const context = this
-    const args = arguments;
-    if (!inThrottle) {
-      fn.apply(context, args);
-      lastTime = Date.now();
-      inThrottle = true;
-    } else {
-      clearTimeout(lastFn);
-      lastFn = setTimeout(() => {
-        if (Date.now() - lastTime >= wait) {
-          fn.apply(context, args);
-          lastTime = Date.now();
-        }
-      }, Math.max(wait - (Date.now() - lastTime), 0));
-    }
-  };
-};
+const throttle = (fun: Function, delay = 0) => {
+  let timeStamp = 0;
+  return function (this: Function, ...args: unknown[]) {
+    const now = Date.now();
+    if (now - timeStamp < delay) return;
+
+    fun.apply(this, args);
+    timeStamp = now;
+  }
+}
 onMounted(()=>{
   const target = document.getElementById("wrapper");
   target!.addEventListener('scroll', throttle(() => {
@@ -33,7 +21,7 @@ onMounted(()=>{
 <template>
   <div id="wrapper" class="relative w-full h-screen overflow-x-hidden">
     <img
-      class="fixed w-4/5 -z-10 -top-40 opacity-30"
+      class="fixed w-4/5 -z-10 top-20 lg:-top-40 opacity-30"
       src="~/assets/svg/JC.svg"
       alt=""
     />
