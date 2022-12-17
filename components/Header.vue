@@ -3,7 +3,7 @@ const menuList = [
   { title: "Profile", id: "profile" },
   { title: "Experience", id: "experience" },
   { title: "Works", id: "works" },
-  { title: "Contact", id: "contact" },
+//   { title: "Contact", id: "contact" },
 ];
 
 const handleScroll = (id: string) => {
@@ -17,7 +17,7 @@ const handleScroll = (id: string) => {
 <template>
   <header class="fixed z-50 flex items-center w-full h-20 lg:absolute">
     <div class="w-[90%] mx-auto hidden lg:block">
-      <ul class="flex items-center justify-between w-1/3">
+      <ul class="flex items-center justify-between w-1/4">
         <li
           class="duration-500 cursor-pointer hover:opacity-60"
           v-for="item in menuList"

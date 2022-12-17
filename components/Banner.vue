@@ -1,7 +1,7 @@
 <script lang="ts" setup>
 const linkList = [
-  { icon: "bi:github", link: "https://github.com/ChangChiao" },
-  { icon: "bi:medium", link: "https://medium.com/coding-hot-pot" },
+  { icon: "bi:github", name: 'github', link: "https://github.com/ChangChiao" },
+  { icon: "bi:medium", name: 'medium', link: "https://medium.com/coding-hot-pot" },
 ];
 </script>
 
@@ -14,7 +14,7 @@ const linkList = [
       </h1>
       <p class="py-4 text-2xl">I'm a front-end engineer</p>
       <div class="p-2 text-center bg-yellow-600 w-60 rounded-3xl">
-        {{ new Date().getFullYear() - 2018 }}+ years experience
+        {{ new Date().getFullYear() - 2017 }}+ years experience
       </div>
       <ul class="flex items-center justify-between w-24 pt-10">
         <li
@@ -27,6 +27,11 @@ const linkList = [
           </a>
         </li>
       </ul>
+      <div class="pt-4">
+        <a href="mailto:joe.chang365@gmail.com">
+            <Icon class="mr-1" name="bi:envelope" /> joe.chang365@gmail.com
+        </a>
+      </div>
       <div class="flex flex-col w-1/3 pt-20">
         <div class="bg-teal-800 hash-tag">
           Vue <span class="hash-tag-year">/ 4 years</span>
@@ -40,9 +45,10 @@ const linkList = [
       </div>
     </div>
     <div
-      class="max-w-[1000px] w-full lg:w-1/2 flex flex-col lg:h-screen -top-10 relative -right-10 lg:-right-60"
+      class="max-w-[1000px] w-full lg:w-2/3 2xl:w-1/2 flex flex-col lg:h-screen -top-10 relative -right-10 lg:-right-60"
     >
       <img src="~/assets/images/joe.png" alt="" />
     </div>
+    <h1 class=""></h1>
   </section>
 </template>
