@@ -1,7 +1,7 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   ssr: false,
-  css: ["~/assets/style/main.css"],
+  css: ["~/assets/style/main.css", "animate.css/animate.min.css"],
   postcss: {
     plugins: {
       tailwindcss: {},

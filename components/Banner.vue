@@ -7,7 +7,7 @@ const linkList = [
 
 <template>
   <section class="relative flex flex-col-reverse items-center justify-between lg:flex-row">
-    <div class="relative w-full top-1/2 lg:w-1/2">
+    <div class="relative w-full top-1/2 lg:w-1/2 animate__animated animate__fadeInLeft">
       <h1 class="text-4xl">
         My name is <br />
         <span class="text-6xl font-bold"> Joe Chang</span>
@@ -45,7 +45,7 @@ const linkList = [
       </div>
     </div>
     <div
-      class="max-w-[1000px] w-full lg:w-2/3 2xl:w-1/2 flex flex-col lg:h-screen -top-10 relative -right-10 lg:-right-60"
+      class="animate__animated animate__fadeInRight max-w-[1000px] w-full lg:w-2/3 2xl:w-1/2 flex flex-col lg:h-screen -top-10 relative -right-10 lg:-right-60"
     >
       <img src="~/assets/images/joe.png" alt="" />
     </div>
